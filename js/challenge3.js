@@ -22,11 +22,12 @@
 
 $(function() {
     $(":submit").click(function(event) {
-        var checked = $("input[name=fruit]:checked").length;
-        if (checked > 0) {
+        var fruit_checked = $("input[name=fruit]:checked").length;
+        var stand_checked = $("input[name=standing]:checked").length;
+        if (fruit_checked > 0 && stand_checked > 0) {
             return true;
         } else {
-            alert("You must pick a fruit!");
+            alert("You must pick a fruit and a standing!");
             event.preventDefault();
         }
     });

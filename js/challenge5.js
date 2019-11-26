@@ -29,6 +29,7 @@ $(function() {
         '<img class="preview" alt = "" src = "" tabindex = "0">' +
         '<img class="preview" alt = "" src = "" tabindex = "0">';
     $(document.body).append(html);
+    //hide the extra purple background space by aligning the height of the image div with my images
     $("#image").css(
         "height",
         "250px",
@@ -37,7 +38,7 @@ $(function() {
         "display",
         "incline-block"
     );
-    $(".preview").css("margin-left", "4.6%");
+    // $(".preview").css("margin-left", "4.6%");
 
     $(".preview").each(function() {
         $(".preview:nth-of-type(1)").attr({
