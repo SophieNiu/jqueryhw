@@ -61,7 +61,7 @@
                     $("#loc").text(loc);
                     var iconcode = json["weather"][0]["icon"];
                     var iconurl =
-                        "http://openweathermap.org/img/w/" + iconcode + ".png";
+                        "https://openweathermap.org/img/w/" + iconcode + ".png";
                     $("#tempImg").attr("src", iconurl);
                     var desc = json["weather"][0]["description"];
                     $("#tempImg").attr("alt", desc);
